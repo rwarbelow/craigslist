@@ -1,0 +1,10 @@
+<div><%= @category.category_name %></div>
+<p><a href='/category/<%= @category.id %>/new_post'>Create a New Post</a></p>
+<% counter = 1 %>
+<ol>
+<% @posts.each do |post| %>
+
+<li><a href="/post/<%= post.id %>"><%= post.title %></a></li>
+
+  <% end %>
+</ol>

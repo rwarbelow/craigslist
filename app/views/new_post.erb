@@ -1,0 +1,9 @@
+<h1>Hey let's create a post</h1>
+
+<form action='/category/<%= @category.id %>/new_post' method="post">
+  <input type="text" name="title" placeholder="Title">
+  <input type="textfield" name="description" placeholder="Description">
+  <input type="text" name="email" placeholder="Email">
+  <input type="number" name="price" placeholder="Price">
+  <input type="submit">
+</form>
